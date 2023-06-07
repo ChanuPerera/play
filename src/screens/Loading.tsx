@@ -18,6 +18,7 @@ import {AppLoader} from '../components/apploader';
 import Guranteed from '../asserts/images/guranteed.png';
 import Trusted from '../asserts/images/trusted.png';
 import Verified from '../asserts/images/verified.png';
+
 import SlickDots from '../components/slick';
 import PrimaryButton from '../components/primarybutton';
 
@@ -43,18 +44,18 @@ const LoadingScreen1 = ({navigation}) => {
         stops={[0.1, 1]}
         center={[0.3, 0.2, 0.5]}
         radius={250}>
-        <View className="mid-section flex flex-col justify-center items-center mt-[120px]">
-          <View className="w-[180px] h-[180px]">
+        <View className="mid-section-1 flex flex-col justify-center items-center mt-[120px]">
+          <View className="mid-image w-[180px] h-[180px]">
             <Image
-              source={Verified}
+              source={Guranteed}
               className="w-[100%] h-[100%] object-fill"
             />
           </View>
-          <Text className="text-[24px] font-bold text-white mt-[32px]">
+          <Text className="mid-header text-[24px] font-bold text-white mt-[32px]">
             Verified Seller
           </Text>
           <View className="w-[80%] justify-center text-justify mt-[12px]">
-            <Text className="text-center text-[#BBBBBB] text-[14px]">
+            <Text className="mid-description text-center text-[#BBBBBB] text-[14px]">
               As a trusted and authorized seller, we offer a wide range of
               PlayStation and Xbox games
             </Text>
@@ -98,20 +99,20 @@ const LoadingScreen2 = ({navigation}) => {
         stops={[0.1, 1]}
         center={[0.3, 0.2, 0.5]}
         radius={250}>
-        <View className="mid-section flex flex-col justify-center items-center mt-[120px]">
+        <View className="mid-section-2 flex flex-col justify-center items-center mt-[120px]">
           <View className="w-[180px] h-[180px]">
             <Image
               source={Verified}
-              className="w-[100%] h-[100%] object-fill"
+              className="mid-image w-[100%] h-[100%] object-fill"
             />
           </View>
-          <Text className="text-[24px] font-bold text-white mt-[32px]">
-            Verified Seller
+          <Text className="mid-header text-[24px] font-bold text-white mt-[32px]">
+            Safeguarded
           </Text>
           <View className="w-[80%] justify-center text-justify mt-[12px]">
-            <Text className="text-center text-[#BBBBBB] text-[14px]">
-              As a trusted and authorized seller, we offer a wide range of
-              PlayStation and Xbox games
+            <Text className="mid-description text-center text-[#BBBBBB] text-[14px]">
+            We ensure that every game you buy 
+            is safeguarded for your peace of mind.
             </Text>
           </View>
         </View>
@@ -155,20 +156,19 @@ const LoadingScreen3 = ({navigation}) => {
         stops={[0.1, 1]}
         center={[0.3, 0.2, 0.5]}
         radius={250}>
-        <View className="mid-section flex flex-col justify-center items-center mt-[120px]">
+        <View className="mid-section-3 flex flex-col justify-center items-center mt-[120px]">
           <View className="w-[180px] h-[180px]">
             <Image
-              source={Verified}
+              source={Trusted}
               className="w-[100%] h-[100%] object-fill"
             />
           </View>
-          <Text className="text-[24px] font-bold text-white mt-[32px]">
-            Verified Seller
+          <Text className="mid-header text-[24px] font-bold text-white mt-[32px]">
+          After Service
           </Text>
           <View className="w-[80%] justify-center text-justify mt-[12px]">
-            <Text className="text-center text-[#BBBBBB] text-[14px]">
-              As a trusted and authorized seller, we offer a wide range of
-              PlayStation and Xbox games
+            <Text className="mid-description text-center text-[#BBBBBB] text-[14px]">
+            Here to help with any inquiries, ensuring a smooth and enjoyable experience.
             </Text>
           </View>
         </View>
