@@ -5,8 +5,8 @@ import Home from './src/screens/home';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, TransitionPresets } from '@react-navigation/stack';
 import VerifiedSeller from './src/screens/Verified';
-import { LoadingScreen1, LoadingScreen2, LoadingScreen3 } from './src/screens/Loading';
-// import LoadingScreen from './src/screens/Loading';
+// import { LoadingScreen1, LoadingScreen2, LoadingScreen3 } from './src/screens/Loading';
+import LoadingScreen from './src/screens/Loading';
 const Stack = createStackNavigator();
 
 const App = () => {
@@ -20,9 +20,9 @@ const App = () => {
         }}
       >
         <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="LoadingScreen1" component={LoadingScreen1} />
-        <Stack.Screen name="LoadingScreen2" component={LoadingScreen2} />
-        <Stack.Screen name="LoadingScreen3" component={LoadingScreen3} />
+        <Stack.Screen name="LoadingScreen" component={LoadingScreen} />
+        {/* <Stack.Screen name="LoadingScreen2" component={LoadingScreen2} />
+        <Stack.Screen name="LoadingScreen3" component={LoadingScreen3} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );

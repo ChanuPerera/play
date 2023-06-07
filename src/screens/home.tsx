@@ -22,7 +22,7 @@ const Home = ({ navigation }) => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.navigate('LoadingScreen1');
+      navigation.navigate('LoadingScreen');
     }, 3000);
 
     return () => clearTimeout(timer);
@@ -30,7 +30,7 @@ const Home = ({ navigation }) => {
 
 
   const handleAppLoaderFinish = () => {
-    navigation.navigate('LoadingScreen1');
+    navigation.navigate('LoadingScreen');
   };
 
   return (
