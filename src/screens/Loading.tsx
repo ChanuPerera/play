@@ -26,6 +26,9 @@ const LoadingScreen = ({ navigation }) => {
 
   const handleNext = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
+    if (activeIndex === 2) {
+      navigation.navigate('Login');
+    }
   };
 
   const renderMidSection = () => {
